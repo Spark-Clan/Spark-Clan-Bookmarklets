@@ -1,0 +1,1 @@
+javascript:%7Bif (document.getElementsByTagName("video").length) %7B%0A  const videos = %5B...document.getElementsByTagName("video")%5D;%0A  const currentSpeed = videos%5B0%5D.playbackRate;%0A  videos.forEach(v => v.playbackRate = currentSpeed == 16 ? 1 : 16);%0A%7D else %7B%0A  console.log("Can%27t find a video.");%0A%7D%7D
